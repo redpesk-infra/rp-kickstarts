@@ -45,7 +45,7 @@ volgroup redpesk-vg0 pv.01
 logvol / --label root --name root --fstype ext4 --vgname redpesk-vg0 --size 7000 --grow
 logvol swap --label swap --name swap --fstype swap --vgname redpesk-vg0 --size 1000
 
-%post --erroronfail
+%post --erroronfail --log /tmp/post.log
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
 releasever=$(rpm -q --qf '%{version}\n' redpesk-release)
@@ -77,7 +77,11 @@ sed -i -r 's: ?nomodeset ?::' /etc/default/grub
 dracut --force --regenerate-all
 %end
 
-%packages --erroronfail
+%onerror --erroronfail --log /tmp/erroronfail.log
+exit 0
+%end
+
+%packages
 @core
 @hardware-support
 NetworkManager-wifi
