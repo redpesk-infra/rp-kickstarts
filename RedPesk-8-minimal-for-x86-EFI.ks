@@ -45,7 +45,7 @@ volgroup redpesk-vg0 pv.01
 logvol / --label root --name root --fstype ext4 --vgname redpesk-vg0 --size 7000 --grow
 logvol swap --label swap --name swap --fstype swap --vgname redpesk-vg0 --size 1000
 
-%post
+%post --erroronfail
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
 releasever=$(rpm -q --qf '%{version}\n' redpesk-release)
@@ -65,9 +65,7 @@ rm -f /var/lib/systemd/random-seed
 # Remove machine-id on pre generated images
 rm -f /etc/machine-id
 touch /etc/machine-id
-%end
 
-%post
 # setup systemd to boot to the right runlevel
 echo -n "Setting default runlevel to multiuser text mode"
 rm -f /etc/systemd/system/default.target
@@ -79,7 +77,7 @@ sed -i -r 's: ?nomodeset ?::' /etc/default/grub
 dracut --force --regenerate-all
 %end
 
-%packages
+%packages --erroronfail
 @core
 @hardware-support
 NetworkManager-wifi
