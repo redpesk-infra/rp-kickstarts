@@ -134,6 +134,8 @@ kernel-modules-4.14.75+git0+1d76a004d3-r1
 -uboot-images-armv8
 -usb_modeswitch
 -xkeyboard-config
+-lvm2
+
 #AGL
 agl-app-framework-binder
 agl-app-framework-main

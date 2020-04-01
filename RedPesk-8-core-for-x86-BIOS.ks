@@ -97,4 +97,6 @@ redpesk-release-iot
 -trousers
 -usb_modeswitch
 -xkeyboard-config
+-lvm2
+
 %end
