@@ -143,10 +143,10 @@ rng-tools
 redpesk-repos
 redpesk-release-iot
 # Yocto BSP kernel
-kernel-4.14.75+git0+59ccbcefae-r1
+kernel-4.14.75+git0+59ccbcefae-r1+h3ulcb
 kernel-dev
 kernel-devicetree
-kernel-modules-4.14.75+git0+59ccbcefae-r1
+kernel-modules-4.14.75+git0+59ccbcefae-r1+h3ulcb
 -@standard
 -dracut-config-rescue
 -generic-release*
