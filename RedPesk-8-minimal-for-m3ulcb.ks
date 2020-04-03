@@ -19,7 +19,7 @@ auth --useshadow --passalgo=sha512
 # Firewall configuration
 firewall --enabled --service=mdns,ssh
 # Run the Setup Agent on first boot
-firstboot --reconfig
+firstboot --disable
 # SELinux configuration
 selinux --disabled
 # Timezone setup
@@ -34,7 +34,7 @@ reboot
 install
 
 # System services
-services --enabled="sshd,NetworkManager,chronyd,initial-setup"
+services --enabled="sshd,NetworkManager,chronyd"
 # System bootloader configuration
 zerombr
 bootloader --location=mbr --boot-drive=vda --append="console=ttyS0"
@@ -113,7 +113,6 @@ chrony
 dracut-config-generic
 extlinux-bootloader
 glibc-langpack-en
-initial-setup
 iw
 rng-tools
 redpesk-repos
@@ -135,6 +134,7 @@ kernel-modules-4.14.75+git0+1d76a004d3-r1
 -usb_modeswitch
 -xkeyboard-config
 -lvm2
+-initial-setup
 
 #AGL
 agl-app-framework-binder

@@ -144,7 +144,6 @@ chrony
 dracut-config-generic
 extlinux-bootloader
 glibc-langpack-en
--initial-setup
 #iw
 rng-tools
 redpesk-repos
@@ -166,6 +165,8 @@ kernel-modules-4.14.75+git0+1d76a004d3-r1
 -usb_modeswitch
 -xkeyboard-config
 -lvm2
+-initial-setup
+
 # AGL
 agl-app-framework-binder
 agl-app-framework-main
