@@ -36,7 +36,7 @@ install
 services --enabled="sshd,NetworkManager,chronyd,initial-setup"
 # System bootloader configuration
 zerombr
-bootloader --location=mbr --boot-drive=vda
+bootloader --location=mbr --boot-drive=vda --append="security=smack"
 # Partition clearing information
 clearpart --none --initlabel
 reqpart --add-boot
@@ -74,9 +74,8 @@ ln -s /lib/systemd/system/multi-user.target /etc/systemd/system/default.target
 # Install is made using nomodeset flag but we don't need it to use the system.
 # It works alright.
 sed -i -r 's: ?nomodeset ?::' /etc/default/grub
-sed -i -r "s:GRUB_CMDLINE_LINUX=\":&security=smack :" /etc/default/grub
-dracut --force -I /etc/smack/accesses.d/default-access-domains -I /etc/smack/accesses.d/default-access-domains-no-user
 dracut --force --regenerate-all
+dracut --force -I /etc/smack/accesses.d/default-access-domains -I /etc/smack/accesses.d/default-access-domains-no-user $(find /boot -iname "*initramfs*")
 %end
 
 %onerror --erroronfail --log /tmp/erroronfail.log
