@@ -48,12 +48,7 @@ logvol swap --label swap --name swap --fstype swap --vgname redpesk-vg0 --size 1
 %post --erroronfail --log /tmp/post.log
 # work around for poor key import UI in PackageKit
 rm -f /var/lib/rpm/__db*
-releasever=$(rpm -q --qf '%{version}\n' redpesk-release)
 basearch=x86_64
-wget http://kojihub01.lorient.iot/iotbzh-repositories/m3ulcb-bsp/RPM-GPG-KEY-RedPesk-Bootstrap -O /etc/pki/rpm-gpg/RPM-GPG-KEY-RedPesk-Bootstrap
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-RedPesk-Bootstrap
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-RedPesk-8-primary
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 echo "Packages within this disk image"
 rpm -qa
 # Note that running rpm recreates the rpm db files which aren't needed or wanted
