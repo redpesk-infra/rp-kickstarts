@@ -1,5 +1,6 @@
 %include distro/RedPesk-8-seanasim.ks
 %include boards/renesas/h3.ks
+%include features/smack.ks
 
 
 # set hostname
