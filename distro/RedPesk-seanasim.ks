@@ -1,4 +1,4 @@
-%include RedPesk-8-minimal.ks
+%include RedPesk-minimal.ks
 
 # Firewall configuration
 firewall --disable

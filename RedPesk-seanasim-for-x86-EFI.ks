@@ -1,4 +1,4 @@
-%include distro/RedPesk-8-seanasim.ks
+%include distro/RedPesk-seanasim.ks
 %include boards/generic/x86-EFI.ks
 %include features/smack.ks
 

@@ -1,10 +1,10 @@
-%include distro/RedPesk-8-seanasim.ks
-%include boards/renesas/h3.ks
+%include distro/RedPesk-seanasim.ks
+%include boards/renesas/m3.ks
 %include features/smack.ks
 
 
 # set hostname
-network --hostname CES2020-h3ulcb
+network --hostname CES2020-m3ulcb
 
 
 %post

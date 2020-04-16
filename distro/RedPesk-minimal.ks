@@ -1,4 +1,4 @@
-%include RedPesk-8-core.ks
+%include RedPesk-core.ks
 
 %packages
 #AGL
