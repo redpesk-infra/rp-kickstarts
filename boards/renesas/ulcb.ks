@@ -14,4 +14,6 @@ dracut --kver $(find /boot -name Image*yocto* | sed 's:^.*Image-::')
 %packages
 kernel-dev
 kernel-devicetree
+-uboot-images-armv7
+-uboot-tools
 %end
