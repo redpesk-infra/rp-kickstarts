@@ -66,10 +66,8 @@ chrony
 dracut-config-generic   # remove this in %post
 glibc-langpack-en
 initial-setup
-iw
 redpesk-release-iot
 redpesk-repos
-rng-tools
 wget
 -@standard
 -dracut-config-rescue
@@ -86,3 +84,5 @@ wget
 -xkeyboard-config
 
 %end
+
+%include ../packages/tools.ks
