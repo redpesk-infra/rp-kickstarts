@@ -10,5 +10,5 @@ systemctl mask tmp.mount
 
 %packages
 @arm-tools
-extlinux-bootloader
+-extlinux-bootloader
 %end
