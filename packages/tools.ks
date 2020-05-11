@@ -1,4 +1,6 @@
 %packages
+can-tests
+can-utils
 dnf-utils
 i2c-tools
 iw

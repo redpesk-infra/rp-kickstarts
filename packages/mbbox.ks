@@ -1,0 +1,9 @@
+%packages
+mosquitto
+logrotate
+wpa_supplicant
+dnsmasq
+sqlite
+avahi
+httpd-manual
+%end
