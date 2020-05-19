@@ -29,11 +29,6 @@ install
 
 # System services
 services --enabled="sshd,NetworkManager,chronyd"
-# Partioning
-autopart --nolvm
-zerombr
-# Partition clearing information
-clearpart --none --initlabel
 
 %post --erroronfail --log /tmp/post-distro.log
 echo "Packages within this disk image"
