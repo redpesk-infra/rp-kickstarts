@@ -78,6 +78,8 @@ wget
 -ipw*
 -iwl*
 -lvm2
+-selinux-policy
+-selinux-policy-targeted
 -trousers
 -uboot-images-armv8
 -usb_modeswitch
