@@ -9,7 +9,6 @@
 # Custom kernel for CM3
 -atmel-firmware
 -libertas-usb8388-firmware
--linux-firmware-whence
 -zd1211-firmware
 -uboot-images-armv7
 -uboot-images-armv8
