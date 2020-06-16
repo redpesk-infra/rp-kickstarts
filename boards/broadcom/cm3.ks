@@ -1,5 +1,6 @@
 %include bcm283x.ks
 
+
 %post --erroronfail --log /tmp/post-cm3.log
 
 %end

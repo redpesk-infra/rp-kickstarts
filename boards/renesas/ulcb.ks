@@ -1,4 +1,5 @@
 %include ../../arch/arm-base.ks
+%include ../../arch/arm-boot-ext4.ks
 
 
 %post
