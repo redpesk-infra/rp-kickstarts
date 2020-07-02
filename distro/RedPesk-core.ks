@@ -54,7 +54,6 @@ echo .
 
 %packages
 @core
-@hardware-support
 NetworkManager-wifi
 chkconfig
 chrony

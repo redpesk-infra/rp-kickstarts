@@ -8,9 +8,6 @@
 
 %packages
 # Custom kernel for CM3
--atmel-firmware
--libertas-usb8388-firmware
--zd1211-firmware
 -uboot-images-armv7
 -uboot-images-armv8
 uboot
