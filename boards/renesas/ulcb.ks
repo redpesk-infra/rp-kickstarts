@@ -12,8 +12,6 @@ dracut --kver $(find /boot -name Image*yocto* | sed 's:^.*Image-::')
 %packages
 kernel-dev
 kernel-devicetree
-# Yocto BSP kernel is included from the bsp repo
-kernel-modules
 -uboot-images-armv7
 -uboot-tools
 %end
