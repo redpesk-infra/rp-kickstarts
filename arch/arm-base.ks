@@ -13,6 +13,7 @@ systemctl mask tmp.mount
 
 
 %packages
+-grubby
 -extlinux-bootloader
 -fedora-arm-installer
 -grub2-common

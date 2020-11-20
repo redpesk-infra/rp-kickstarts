@@ -15,4 +15,5 @@ kernel-devicetree
 kernel-modules
 -uboot-images-armv7
 -uboot-tools
+-zram-generator
 %end

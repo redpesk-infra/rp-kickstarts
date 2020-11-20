@@ -2,7 +2,7 @@
 
 %packages
 #AGL
-agl-app-framework-binder
-agl-app-framework-main
-agl-app-framework-main-rpm
+afb-binder
+afb-app-manager
+afb-app-manager-rpm
 %end

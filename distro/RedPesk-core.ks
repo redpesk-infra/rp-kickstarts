@@ -49,6 +49,8 @@ touch /etc/machine-id
 echo -n "Setting default runlevel to multiuser text mode"
 rm -f /etc/systemd/system/default.target
 ln -s /lib/systemd/system/multi-user.target /etc/systemd/system/default.target
+#Permit root login in ssh
+[ -f /etc/ssh/sshd_config ] && sed -ri "s/^\#?(PermitRootLogin).*$/\1 yes/" /etc/ssh/sshd_config
 echo .
 %end
 
@@ -59,11 +61,15 @@ chkconfig
 chrony
 dracut-config-generic   # remove this in %post
 glibc-langpack-en
-initial-setup
 redpesk-release-iot
 redpesk-repos
 wget
+dnf
+#hack: needed by dnf
+libgomp
 -@standard
+-fedora-repos
+-fedora-repos-modular
 -dracut-config-rescue
 -generic-release*
 -initial-setup
@@ -75,7 +81,6 @@ wget
 -selinux-policy
 -selinux-policy-targeted
 -trousers
--uboot-images-armv8
 -usb_modeswitch
 -xkeyboard-config
 
