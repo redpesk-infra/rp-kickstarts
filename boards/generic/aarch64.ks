@@ -22,9 +22,6 @@ bcm283x-firmware
 -usb_modeswitch
 -generic-release*
 
-# make sure all the locales are available for inital-setup and anaconda to work
-glibc-all-langpacks
-
 %end
 %post
 

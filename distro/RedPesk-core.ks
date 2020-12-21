@@ -68,6 +68,7 @@ dnf
 #hack: needed by dnf
 libgomp
 -@standard
+-glibc-all-langpacks
 -fedora-repos
 -fedora-repos-modular
 -dracut-config-rescue
