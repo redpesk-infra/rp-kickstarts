@@ -16,4 +16,5 @@ kernel-modules
 -uboot-images-armv7
 -uboot-tools
 -zram-generator
+-zram-generator-defaults
 %end
