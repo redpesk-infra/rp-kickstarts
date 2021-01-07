@@ -63,6 +63,7 @@ dracut-config-generic   # remove this in %post
 glibc-langpack-en
 redpesk-release-iot
 redpesk-repos
+redhat-rpm-config
 wget
 dnf
 #hack: needed by dnf
