@@ -69,8 +69,6 @@ dnf
 #hack: needed by dnf
 libgomp
 -@standard
--mozjs
--GeoIP
 -glibc-all-langpacks
 -fedora-repos
 -fedora-repos-modular
