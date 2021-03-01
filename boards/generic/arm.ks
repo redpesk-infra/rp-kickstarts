@@ -7,13 +7,12 @@ clearpart --all --initlabel --disklabel=msdos
 @core
 @standard
 @hardware-support
+uboot-rpi
 
-kernel
 # remove this in %post
 dracut-config-generic
 -dracut-config-rescue
 # install tools needed to manage and boot arm systems
-@arm-tools
 chrony
 bcm283x-firmware
 # Intel wireless firmware assumed never of use for disk images

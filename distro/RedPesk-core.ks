@@ -59,7 +59,6 @@ chkconfig
 chrony
 dracut-config-generic   # remove this in %post
 glibc-langpack-en
-redpesk-release-iot
 redpesk-repos
 redpesk-bsp-repos
 redhat-rpm-config
