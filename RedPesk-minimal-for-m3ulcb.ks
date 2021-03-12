@@ -1,3 +1,10 @@
 %include distro/RedPesk-minimal.ks
-%include features/smack.ks
 %include boards/renesas/m3.ks
+%include features/smack.ks
+%include features/redpesk-partitioning.ks
+%include features/recovery.ks
+
+
+
+# Called at the end
+#%include features/factory_backup.ks
