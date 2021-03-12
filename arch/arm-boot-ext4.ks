@@ -4,5 +4,4 @@
 zerombr
 clearpart --all
 
-part /boot  --fstype ext4 --size 512    --asprimary --label=BOOT
-part /      --fstype ext4 --size 2048   --asprimary --label=rootfs  --grow   --fsoptions="noatime"
+part /boot  --fstype ext4 --size 512    --asprimary --label=boot

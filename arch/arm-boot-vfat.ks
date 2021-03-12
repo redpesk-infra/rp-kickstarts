@@ -4,5 +4,9 @@
 zerombr
 clearpart --all
 
-part /boot  --fstype vfat --size 512    --asprimary --label=BOOT
-part /      --fstype ext4 --size 2048   --asprimary --label=rootfs  --grow   --fsoptions="noatime"
+part /boot/firmware  --fstype vfat --size 100    --asprimary --label=boot
+
+
+%post --erroronfail --log /tmp/post-arm-boot-vfat.log
+sed -i '/firmware/d' /etc/fstab
+%end
