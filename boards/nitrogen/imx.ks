@@ -8,4 +8,5 @@
 
 %packages
 uboot-bootscripts
+qcacld-kmod
 %end
