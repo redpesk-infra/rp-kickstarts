@@ -24,8 +24,6 @@ selinux --disabled
 skipx
 # Reboot the image once installed. ImageFactory look for that!
 reboot
-# Do the install
-install
 
 # System services
 services --enabled="sshd,NetworkManager,chronyd"
