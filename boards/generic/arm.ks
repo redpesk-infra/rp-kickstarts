@@ -1,4 +1,4 @@
-bootloader --timeout=1 --append="security=smack"
+bootloader --timeout=1 --append="security=smack console=tty1"
 
 zerombr
 clearpart --all --initlabel --disklabel=msdos
@@ -9,6 +9,7 @@ clearpart --all --initlabel --disklabel=msdos
 @hardware-support
 uboot-rpi
 
+dracut-redpesk-arm
 # remove this in %post
 dracut-config-generic
 -dracut-config-rescue
