@@ -5,6 +5,7 @@ dnf-utils
 i2c-tools
 iw
 picocom
+platform-runtime-tools
 rng-tools
 tar
 tree
