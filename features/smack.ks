@@ -3,4 +3,5 @@
 
 %packages
 smack-rules
+sec-lsm-manager-smack
 %end
