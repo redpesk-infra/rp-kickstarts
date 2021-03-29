@@ -1,3 +1,5 @@
+%include ../packages/agl-binding.ks
+
 %post --erroronfail --log /tmp/post-agl-binding_install.log
 if [ -f /tmp/agl-binding-list ]; then
 	source /tmp/agl-binding-list
