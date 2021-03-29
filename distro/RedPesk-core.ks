@@ -62,6 +62,7 @@ glibc-langpack-en
 redpesk-release-iot
 redpesk-repos
 redhat-rpm-config
+platform-firstboot
 wget
 dnf
 #hack: needed by dnf
