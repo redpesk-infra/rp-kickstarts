@@ -3,7 +3,6 @@
 #recovery partition mounted in /recovery
 
 %packages
-spawn-binding	#WorkAround: To not uninstall it with dracut-redpesk-recovery
 dracut-redpesk-recovery
 %end
 
