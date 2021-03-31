@@ -5,5 +5,5 @@
 AGL_BINDING="\
 	helloworld-binding \
 "
-echo "AGL_BINDING=\"$AGL_BINDING\"" >> /tmp/agl-binding-list
+echo "AGL_BINDING=\"\$AGL_BINDING ${AGL_BINDING}\"" >> /tmp/agl-binding-list
 %end
