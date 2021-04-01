@@ -1,4 +1,3 @@
-%include RedPesk-core.ks
 %include ../features/agl-binding.ks
 
 %packages

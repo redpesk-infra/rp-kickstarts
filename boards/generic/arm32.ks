@@ -1,5 +1,4 @@
 %include arm.ks
-%include ../../arch/arm-boot-vfat-efi.ks
 
 %packages
 uboot-images-armv7

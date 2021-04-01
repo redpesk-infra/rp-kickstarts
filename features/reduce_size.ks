@@ -2,7 +2,6 @@
 %packages
 -alsa-sof-firmware
 -cracklib-dicts
--dmidecode
 -langpacks-en
 -mozjs78
 -geolite2-country

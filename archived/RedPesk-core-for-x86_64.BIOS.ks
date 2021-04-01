@@ -1,3 +1,4 @@
 %include distro/RedPesk-core.ks
-%include boards/generic/x86-BIOS.ks
+%include arch/boot-BIOS.ks
+%include arch/x86-base.ks
 %include features/smack.ks

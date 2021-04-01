@@ -1,3 +1,5 @@
+%include ../features/redpesk-partitioning.ks
+
 # Use the text interface not the graphical one
 text
 #version=DEVEL
