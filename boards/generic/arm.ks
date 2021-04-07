@@ -1,5 +1,3 @@
-bootloader --timeout=1 --append="security=smack console=tty1"
-
 zerombr
 clearpart --all --initlabel --disklabel=msdos
 

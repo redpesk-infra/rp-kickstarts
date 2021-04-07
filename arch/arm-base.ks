@@ -1,9 +1,3 @@
-
-
-# Disabling bootloader for ARM images
-bootloader --location=none --disabled
-
-
 %post --erroronfail --log /tmp/post-arch.log
 # Because memory is scarce resource in most arm systems we are differing from the Fedora
 # default of having /tmp on tmpfs.
