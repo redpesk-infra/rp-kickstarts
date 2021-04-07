@@ -20,13 +20,10 @@ firewall --enabled --service=mdns,ssh
 ignoredisk --only-use=vda
 # Run the Setup Agent on first boot
 firstboot --disable
-# SELinux configuration
-selinux --disabled
 # Do not configure the X Window System
 skipx
 # Reboot the image once installed. ImageFactory look for that!
 reboot
-
 # System services
 services --enabled="sshd,NetworkManager,chronyd"
 
@@ -82,8 +79,6 @@ libgomp
 -ipw*
 -iwl*
 -lvm2
--selinux-policy
--selinux-policy-targeted
 -trousers
 -usb_modeswitch
 -xkeyboard-config
