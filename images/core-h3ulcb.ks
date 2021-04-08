@@ -1,3 +1,4 @@
+%include ../distro/Redpesk-bsp.ks
 %include ../distro/RedPesk-core.ks
 %include ../boards/renesas/h3.ks
 %include ../features/recovery.ks

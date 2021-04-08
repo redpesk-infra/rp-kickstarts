@@ -59,7 +59,6 @@ chrony
 dracut-config-generic   # remove this in %post
 glibc-langpack-en
 redpesk-repos
-redpesk-bsp-repos
 redhat-rpm-config
 platform-firstboot
 wget
