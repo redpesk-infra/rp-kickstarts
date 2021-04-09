@@ -1,5 +1,5 @@
 %include ../arch/boot-EFI.ks
-%include ../distro/RedPesk-core.ks
+%include ../distro/redpesk-core.ks
 %include ../boards/generic/arm.ks
 %include ../features/recovery.ks
 %include ../features/reduce_size.ks

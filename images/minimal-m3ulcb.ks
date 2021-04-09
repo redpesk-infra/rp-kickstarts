@@ -1,4 +1,4 @@
-%include ../distro/RedPesk-minimal.ks
+%include ../distro/redpesk-minimal.ks
 %include core-m3ulcb.ks
 
 
