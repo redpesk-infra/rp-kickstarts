@@ -1,4 +1,4 @@
-%include ../distro/RedPesk-core.ks
+%include ../distro/RedPesk-minimal.ks
 %include core-nitrogen.ks
 
 # Called at the end
