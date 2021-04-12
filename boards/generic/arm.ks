@@ -5,7 +5,6 @@ clearpart --all --initlabel --disklabel=msdos
 @core
 @standard
 @hardware-support
-uboot-rpi
 
 dracut-redpesk-arm
 # remove this in %post
