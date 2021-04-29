@@ -66,6 +66,7 @@ dnf
 dracut-redpesk-common
 #hack: needed by dnf
 libgomp
+sssd-client
 -@standard
 -glibc-all-langpacks
 -fedora-repos
