@@ -9,6 +9,7 @@
 
 %packages
 # Custom kernel for IMX
+linux-firmware-imx
 -atmel-firmware
 -libertas-usb8388-firmware
 -zd1211-firmware
