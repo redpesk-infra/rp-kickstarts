@@ -7,5 +7,7 @@
 
 
 %packages
+configs-solidrun
+solidrun-firmware
 uboot
 %end
