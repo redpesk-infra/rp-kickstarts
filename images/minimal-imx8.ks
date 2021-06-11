@@ -2,4 +2,4 @@
 %include core-imx8.ks
 
 # Called at the end
-#%include features/factory_backup.ks
+#%include ../features/factory_backup.ks

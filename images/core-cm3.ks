@@ -1,9 +1,8 @@
+%include ../distro/redpesk-bsp.ks
 %include ../distro/redpesk-core.ks
 %include ../boards/broadcom/cm3.ks
-#%include ../features/smack.ks
-%include ../packages/mbbox.ks
+%include ../features/recovery.ks
+%include ../features/reduce_size.ks
 
-
-%post --erroronfail --log /tmp/post-mbbox.log
-systemctl enable systemd-timesyncd
-%end
+# Called at the end
+#%include ../features/factory_backup.ks

@@ -5,4 +5,4 @@
 %include ../features/reduce_size.ks
 
 # Called at the end
-#%include features/factory_backup.ks
+#%include ../features/factory_backup.ks

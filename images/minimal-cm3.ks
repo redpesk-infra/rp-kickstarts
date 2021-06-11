@@ -1,7 +1,5 @@
 %include ../distro/redpesk-minimal.ks
 %include core-cm3.ks
 
-
-%post --erroronfail --log /tmp/post-mbbox.log
-systemctl enable systemd-timesyncd
-%end
+# Called at the end
+#%include ../features/factory_backup.ks
