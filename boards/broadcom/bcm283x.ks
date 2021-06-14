@@ -9,4 +9,5 @@
 
 %packages
 bcm283x-firmware
+linux-firmware-brcm
 %end

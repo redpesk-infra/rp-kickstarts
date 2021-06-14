@@ -12,7 +12,9 @@ dracut-config-generic
 -dracut-config-rescue
 # install tools needed to manage and boot arm systems
 chrony
+# Raspberry firmware
 bcm283x-firmware
+linux-firmware-brcm
 # Intel wireless firmware assumed never of use for disk images
 -iwl*
 -ipw*
