@@ -8,6 +8,7 @@
 
 %packages
 # Custom kernel for CM3
+-linux-firmware-brcm
 -uboot-images-armv7
 -uboot-images-armv8
 uboot
