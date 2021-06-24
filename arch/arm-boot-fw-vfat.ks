@@ -2,7 +2,7 @@
 # NOTE: /boot and swap MUST use --asprimary to ensure '/' is the last partition in order for rootfs-resize to work.
 # Need to create logical volume groups first then partition
 zerombr
-clearpart --all
+clearpart --all --disklabel=msdos
 
 part /boot/firmware  --fstype vfat --size 100    --asprimary --label=firmware
 
