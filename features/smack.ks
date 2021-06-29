@@ -7,3 +7,7 @@ sec-lsm-manager-smack
 
 # SELinux configuration
 selinux --disabled
+
+%post
+echo "SECURITY_MODEL=\"smack\"" >> /etc/os-release
+%end
