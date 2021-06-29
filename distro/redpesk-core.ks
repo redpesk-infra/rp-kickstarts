@@ -50,6 +50,7 @@ ln -s /lib/systemd/system/multi-user.target /etc/systemd/system/default.target
 [ -f /etc/ssh/sshd_config ] && sed -ri "s/^\#?(PermitRootLogin).*$/\1 yes/" /etc/ssh/sshd_config
 echo .
 
+echo "ARCH=\"`rpm --eval %{_arch}`\"" >> /etc/os-release
 echo "BUILD_DATE=\"`date '+%Y-%m-%d %H:%M:%S'`\"" >> /etc/os-release
 %end
 
