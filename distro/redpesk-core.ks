@@ -26,6 +26,10 @@ skipx
 reboot
 # System services
 services --enabled="sshd,NetworkManager,chronyd"
+services --disabled="kdump"
+
+%addon com_redhat_kdump --disable
+%end
 
 %post --erroronfail --log /tmp/post-distro.log
 echo "Packages within this disk image"
