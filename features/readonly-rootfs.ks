@@ -14,6 +14,8 @@ echo "files /etc/hostname" >> /etc/statetab.d/others
 
 # Enable support of READONLY rootfs into configfile
 sed -i 's/READONLY=no/READONLY=yes/g' /etc/sysconfig/readonly-root
+# Use config partition for stateless partition
+sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/readonly-root
 
 # Fix NetworkManager DNS resolving
 rm -f /etc/resolv.conf
