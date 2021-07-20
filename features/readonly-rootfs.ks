@@ -1,6 +1,4 @@
 %post --erroronfail --log /tmp/post-readonly.log
-# Setup fstab to mount file systems in ro mode
-sed -i '/\/ /s/noatime /noatime,ro /g' /etc/fstab
 
 # Create statetab.d folder to declare rw folder
 mkdir -p /etc/statetab.d
@@ -12,8 +10,6 @@ echo "files /etc/machine-id" >> /etc/statetab.d/others
 echo "files /etc/localtime" >> /etc/statetab.d/others
 echo "files /etc/hostname" >> /etc/statetab.d/others
 
-# Enable support of READONLY rootfs into configfile
-sed -i 's/READONLY=no/READONLY=yes/g' /etc/sysconfig/readonly-root
 # Use config partition for stateless partition
 sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/readonly-root
 
