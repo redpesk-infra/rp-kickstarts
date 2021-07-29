@@ -3,8 +3,9 @@
 # Create statetab.d folder to declare rw persistent folders and files
 mkdir -p /etc/statetab.d
 
-echo "dirs /var" > /etc/statetab.d/var
+echo "dirs /var/lib" > /etc/statetab.d/varlib
 echo "dirs /etc/ssh" > /etc/statetab.d/ssh-config
+echo "dirs /home/0/app-data" > /etc/statetab.d/bindings-data
 
 echo "files /etc/localtime" >> /etc/statetab.d/others
 echo "files /etc/hostname" >> /etc/statetab.d/others
@@ -18,9 +19,6 @@ sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/reado
 # Fix NetworkManager DNS resolving
 rm -f /etc/resolv.conf
 ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf
-
-# Fix auditd log folder
-mkdir -p /var/log/audit
 
 # Enable fedora service for readonly rootfs by default
 systemctl enable readonly-root
