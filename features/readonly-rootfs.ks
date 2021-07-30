@@ -6,6 +6,7 @@ mkdir -p /etc/statetab.d
 echo "dirs /var/lib" > /etc/statetab.d/varlib
 echo "dirs /etc/ssh" > /etc/statetab.d/ssh-config
 echo "dirs /home/0/app-data" > /etc/statetab.d/bindings-data
+echo "dirs /var/scope-platform" >> /etc/statetab.d/bindings-data
 
 echo "files /etc/localtime" >> /etc/statetab.d/others
 echo "files /etc/hostname" >> /etc/statetab.d/others
