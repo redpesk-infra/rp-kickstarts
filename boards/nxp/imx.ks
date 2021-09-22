@@ -1,6 +1,11 @@
 %include ../../arch/arm-base.ks
 %include ../../arch/arm-boot-ext4.ks
 
+%pre --erroronfail --log /tmp/board-imx8.log
+START_OFFSET=2
+echo "START_OFFSET="${START_OFFSET} >> /tmp/rp-boot.cfg
+%end
+
 
 %post --erroronfail --log /tmp/post-imx.log
 # Set your board specific post actions here
