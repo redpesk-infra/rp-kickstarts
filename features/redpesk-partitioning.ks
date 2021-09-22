@@ -1,4 +1,5 @@
 # Note that only 3 primary parts are available (the 4th is used to create the extended parts)
+%include redpesk-partitioning-boot.ks
 
 # Setup specific partition scheme of redpesk
 part /config    --fstype ext4 --size 512     --asprimary --label=config   --fsoptions="noatime,rw"

@@ -1,10 +1,19 @@
-# Partitioning
-# NOTE: /boot and swap MUST use --asprimary to ensure '/' is the last partition in order for rootfs-resize to work.
-# Need to create logical volume groups first then partition
-zerombr
-clearpart --all --disklabel=msdos
+%pre --erroronfail --log /tmp/pre-arm-boot-fw-vfat.log
 
-part /boot/firmware  --fstype vfat --size 100    --asprimary --label=firmware
+PART_TYPE="msdos"
+START_OFFSET=0
+BOOT_FS="fat32"
+BOOT_SIZE=100
+
+echo "PART_TYPE="${PART_TYPE} >> /tmp/rp-boot.cfg
+echo "START_OFFSET="${START_OFFSET} >> /tmp/rp-boot.cfg
+echo "BOOT_FS="${BOOT_FS} >> /tmp/rp-boot.cfg
+echo "BOOT_SIZE="${BOOT_SIZE} >> /tmp/rp-boot.cfg
+
+%end
+
+
+part /boot/firmware  --fstype=vfat --onpart=vda1 --label=firmware
 
 
 %post --erroronfail --log /tmp/post-arm-boot-fw-vfat.log
