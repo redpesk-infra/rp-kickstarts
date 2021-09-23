@@ -6,7 +6,7 @@
 DEVICE="/dev/vda"
 
 source /tmp/rp-boot.cfg
-[ -z $BOOT_FS ] || [ -z $START_OFFSET ] || [ -z $BOOT_SIZE ] && exit -1
+[ -z $BOOT_FS ] || [ -z $START_OFFSET ] || [ -z $BOOT_SIZE ] || [ -z $PART_TYPE ] && exit -1
 
 # 1Mib = 1.04858 MB
 function conv_mibtomb() {
