@@ -1,8 +1,8 @@
-%include ../../arch/arm-base.ks
-%include ../../arch/arm-boot-ext4.ks
+%include ../nxp/imx.ks
 
-%post --erroronfail --log /tmp/post-solidrun-imx8mn-compact.log
-
+%post --erroronfail --nochroot --log /tmp/post-solidrun-imx8mn-compact.log
+# Copy the u-boot binary at the Solidrun board's expected offset
+dd if=/mnt/sysroot/boot/flash.bin of=/dev/vda bs=1024 seek=32
 %end
 
 
