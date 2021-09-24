@@ -1,5 +1,3 @@
-zerombr
-clearpart --all --initlabel --disklabel=msdos
 
 %packages
 @core
