@@ -5,7 +5,7 @@ source /etc/os-release
 if [[ $VERSION_ID == "33" ]]; then
 	REPO="redpesk-agl-build"
 else
-	REPO="redpesk-middleware*"
+	REPO="redpesk-*"
 fi
 RPMS_DIR="/var/lib/rp-firstboot/rpms"
 if [ -f /tmp/agl-binding-list ]; then
