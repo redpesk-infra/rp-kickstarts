@@ -28,5 +28,5 @@ fi
 parted -s $DEVICE mklabel $PART_TYPE
 parted -s $DEVICE mkpart primary $BOOT_FS $START_OFFSET $(($START_OFFSET + $BOOT_SIZE))
 [[ $PART_TYPE == "gpt" ]] && parted -s $DEVICE name 1 boot
-
+exit 0
 %end
