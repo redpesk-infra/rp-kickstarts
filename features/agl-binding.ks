@@ -13,11 +13,11 @@ if [ -f /tmp/agl-binding-list ]; then
 	mkdir -p $RPMS_DIR
 	LIST=$(rpm -qa --qf "%{NAME}\n" | grep binding | tr "\n" " ")
 	[ -n "${LIST}" ] && dnf reinstall -y \
-		--enablerepo="$REPO" --disablerepo=*source* --disablerepo=*debug* \
+		--enablerepo="$REPO" --disablerepo=*source* --disablerepo=*debug* --disablerepo=*candidate* \
 		--downloadonly --downloaddir=$RPMS_DIR \
 		${LIST}
 	[ -n "${AGL_BINDING}" ] && dnf install -y \
-		--enablerepo="$REPO" --disablerepo=*source* --disablerepo=*debug* \
+		--enablerepo="$REPO" --disablerepo=*source* --disablerepo=*debug* --disablerepo=*candidate \
 		--downloadonly --downloaddir=$RPMS_DIR \
 		${AGL_BINDING}
 	rm /tmp/agl-binding-list
