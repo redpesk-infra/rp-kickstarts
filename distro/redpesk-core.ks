@@ -1,7 +1,9 @@
 %include ../features/redpesk-partitioning.ks
 
+#Live media need
+network --bootproto=dhcp --device=link --activate
 # Use the text interface not the graphical one
-text
+#text
 #version=DEVEL
 # Keyboard layouts
 keyboard --vckeymap=fr --xlayouts='fr'
@@ -16,14 +18,14 @@ timezone --isUtc Europe/Paris
 auth --useshadow --passalgo=sha512
 # Firewall configuration
 firewall --enabled --service=mdns,ssh
-# Use automatic partioning on vda
-ignoredisk --only-use=vda
+# Be sure host drive will not be touched by anaconda
+ignoredisk --drives=vda
 # Run the Setup Agent on first boot
 firstboot --disable
 # Do not configure the X Window System
 skipx
-# Reboot the image once installed. ImageFactory look for that!
-reboot
+# Shutdown the image when finished
+shutdown
 # System services
 services --enabled="sshd,NetworkManager,chronyd"
 services --disabled="kdump"
@@ -65,6 +67,7 @@ NetworkManager-wifi
 chkconfig
 chrony
 dracut-config-generic   # remove this in %post
+dracut-live
 glibc-langpack-en
 redpesk-repos
 iotbzh-rpm-config
