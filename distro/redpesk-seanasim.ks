@@ -4,7 +4,7 @@
 firewall --disable
 
 # System bootloader configuration
-bootloader --location=mbr --boot-drive=vda --append=" security=none"
+bootloader --location=mbr --boot-drive="/dev/mapper/Redpesk-OS" --append=" security=none"
 
 
 %packages

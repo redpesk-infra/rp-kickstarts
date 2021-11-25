@@ -1,15 +1,10 @@
-%pre --erroronfail --log /tmp/pre-arm-boot-vfat.log
+# Partitioning
+# NOTE: /boot and swap MUST use --asprimary to ensure '/' is the last partition in order for rootfs-resize to work.
+# Need to create logical volume groups first then partition
+zerombr
+clearpart --all --disklabel=gpt
 
-PART_TYPE="msdos"
-START_OFFSET=0
-BOOT_FS="fat32"
-BOOT_SIZE=500
+# Offset partition, will be deleted after anaconda install
+part /offsettodelete --fstype vfat --size 10 --label=offsettodelete
 
-echo "PART_TYPE="${PART_TYPE} >> /tmp/rp-boot.cfg
-echo "START_OFFSET="${START_OFFSET} >> /tmp/rp-boot.cfg
-echo "BOOT_FS="${BOOT_FS} >> /tmp/rp-boot.cfg
-echo "BOOT_SIZE="${BOOT_SIZE} >> /tmp/rp-boot.cfg
-
-%end
-
-part /boot  --fstype=vfat --onpart=vda1 --label=boot
+part /boot  --fstype vfat --size 500    --asprimary --label=boot

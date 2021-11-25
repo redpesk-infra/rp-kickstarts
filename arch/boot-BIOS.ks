@@ -1,15 +1,7 @@
-%pre --erroronfail --log /tmp/pre-boot-BIOS.log
+# Partitioning X86 images
+zerombr
 
-PART_TYPE="msdos"
-START_OFFSET=0
-BOOT_FS="fat32"
-BOOT_SIZE=500
+# Partition clearing information
+clearpart --none --initlabel --disklabel=msdos
 
-echo "PART_TYPE="${PART_TYPE} >> /tmp/rp-boot.cfg
-echo "START_OFFSET="${START_OFFSET} >> /tmp/rp-boot.cfg
-echo "BOOT_FS="${BOOT_FS} >> /tmp/rp-boot.cfg
-echo "BOOT_SIZE="${BOOT_SIZE} >> /tmp/rp-boot.cfg
-
-%end
-
-part /boot --onpart=vda1 --label=boot
+part /boot  --fstype ext4 --size 500    --label=boot

@@ -1,4 +1,4 @@
 %include features/smack.ks
 %include images/minimal-aarch64.ks
 
-bootloader --timeout=1 --append="security=smack console=tty1"
+bootloader --location=mbr --timeout=1 --boot-drive="/dev/mapper/Redpesk-OS" --append="security=smack console=tty1"
