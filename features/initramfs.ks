@@ -16,7 +16,7 @@ if [[ `rpm -E %{_arch}` == "aarch64" ]]; then
 else
 	mv /tmp/initramfs.img /recovery/initramfs.img
 	#Re-generate grub2 entries with recovery initramfs
-	grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+	grub2-mkconfig -o /boot/efi/EFI/redpesk/grub.cfg
 fi
 
 #Remove pkg only installed for initramfs generating
