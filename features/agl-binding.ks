@@ -1,5 +1,10 @@
 %include ../packages/agl-binding.ks
 
+
+%post --nochroot --erroronfail
+cp /etc/resolv.conf /mnt/sysimage/etc/
+%end
+
 %post --erroronfail --log /tmp/post-agl-binding_install.log
 source /etc/os-release
 if [[ $VERSION_ID == "33" ]]; then
@@ -21,6 +26,7 @@ if [ -f /tmp/agl-binding-list ]; then
 		--downloadonly --downloaddir=$RPMS_DIR \
 		${AGL_BINDING}
 	rm /tmp/agl-binding-list
+rm -f /etc/resolv.conf
 fi
 
 #Clean DNF Cache
