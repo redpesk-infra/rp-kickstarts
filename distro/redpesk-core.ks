@@ -32,8 +32,9 @@ services --disabled="kdump"
 %end
 
 %post --erroronfail --log /tmp/post-distro.log
-echo "Packages within this disk image"
-rpm -qa
+echo "Packages within this disk image :"
+rpm -qa | sort -h
+echo ""
 # Note that running rpm recreates the rpm db files which aren't needed or wanted
 rm -f /var/lib/rpm/__db*
 
