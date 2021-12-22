@@ -18,6 +18,7 @@ linux-firmware-brcm
 -ipw*
 -usb_modeswitch
 -generic-release*
+-syslinux-extlinux
 
 %end
 %post
