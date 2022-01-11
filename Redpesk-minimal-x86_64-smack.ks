@@ -1,5 +1,5 @@
-%include features/smack.ks
 %include images/minimal-x86_64.ks
+%include features/smack.ks
 %include features/extract_logs.ks
 
 # System bootloader configuration
