@@ -7,6 +7,15 @@ part /      	--fstype ext4 --size 3500                --label=rootfs   --fsoptio
 part /data  	--fstype ext4 --size 2000                --label=data     --fsoptions="noatime,rw" --grow
 
 %post --nochroot --logfile=/mnt/sysroot/tmp/post-fstab.log --erroronfail
+# Delete arm offset partition then update part tables
+grep "offsettodelete" /mnt/sysroot/etc/fstab
+if [[ $? == 0 ]]; then
+	echo "Deleting offset partition..."
+	sed -i "/offsettodelete/d" /mnt/sysroot/etc/fstab
+	sfdisk --delete -f /dev/mapper/Redpesk-OS 1
+	sfdisk -r -f /dev/mapper/Redpesk-OS
+fi
+
 echo "Setting UUID into /etc/fstab..."
 grep "^/dev.*Redpesk*" /mnt/sysroot/etc/fstab | while read part ; do
 	dev=$(echo $part | cut -d' ' -f1)
@@ -21,13 +30,4 @@ grep "^/dev.*Redpesk*" /mnt/sysroot/etc/fstab | while read part ; do
 	echo "dev=$dev UUID=$UUID label=$label"
 	sed -i "s|${dev}|UUID=\"${UUID}\"|g" /mnt/sysroot/etc/fstab
 done
-
-# Delete arm offset partition then update part tables
-grep "offsettodelete" /mnt/sysroot/etc/fstab
-if [[ $? == 0 ]]; then
-	echo "Deleting offset partition..."
-	sed -i "/offsettodelete/d" /mnt/sysroot/etc/fstab
-	parted -s /dev/mapper/Redpesk-OS rm 1
-	sfdisk -r /dev/mapper/Redpesk-OS
-fi
 %end
