@@ -19,7 +19,7 @@ auth --useshadow --passalgo=sha512
 # Firewall configuration
 firewall --enabled --service=mdns,ssh
 # Be sure host drive will not be touched by anaconda
-ignoredisk --drives="vda,vdb"
+ignoredisk --drives="vd*"
 # Run the Setup Agent on first boot
 firstboot --disable
 # Do not configure the X Window System
