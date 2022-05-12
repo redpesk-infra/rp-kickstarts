@@ -10,4 +10,5 @@ dd if=/mnt/sysroot/boot/flash.bin of=/dev/mapper/Redpesk-OS bs=1024 seek=32
 configs-solidrun
 solidrun-firmware
 uboot
+NetworkManager-wwan
 %end
