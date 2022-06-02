@@ -4,7 +4,4 @@
 zerombr
 clearpart --all --disklabel=gpt
 
-# Offset partition, will be deleted after anaconda install, see features/redpesk-partitioning.ks
-part /offsettodelete --fstype vfat --size 10 --label=offsettodelete
-
 part /boot  --fstype ext4 --size 500    --asprimary --label=boot

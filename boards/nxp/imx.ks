@@ -1,6 +1,10 @@
 %include ../../arch/arm-base.ks
-%include ../../arch/arm-boot-ext4.ks
 
+zerombr
+clearpart --all --disklabel=gpt
+
+# Add an offset on the first part (/boot) to let some space for firmware
+part /boot  --fstype ext4 --size 500    --asprimary --label=boot --start=10
 
 %post --erroronfail --log /tmp/post-imx.log
 # Set your board specific post actions here

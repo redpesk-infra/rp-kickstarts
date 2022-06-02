@@ -4,9 +4,4 @@
 zerombr
 clearpart --all --disklabel=msdos
 
-part /boot/firmware  --fstype vfat --size 100    --asprimary --label=firmware
-
-
-%post --erroronfail --log /tmp/post-arm-boot-fw-vfat.log
-sed -i '/firmware/d' /etc/fstab
-%end
+part /boot  --fstype ext4 --size 500    --asprimary --label=boot
