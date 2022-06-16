@@ -20,10 +20,10 @@ echo "Setting UUID into /etc/fstab..."
 grep "^/dev.*Redpesk*" /mnt/sysroot/etc/fstab | while read part ; do
 	dev=$(echo $part | cut -d' ' -f1)
 	label=$(echo $part | cut -d' ' -f2)
-	label="${label:1}"
+	label="${label##*/}"
 	if [[ "$label" == "" ]]; then
 		label="rootfs"
-	elif [[ "$label" == "boot/efi" ]]; then
+	elif [[ "$label" == "efi" ]]; then
 		label="EFI"
 	fi
 	UUID=$(blkid -s UUID -o value `blkid -L $label`)
