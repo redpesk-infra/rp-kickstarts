@@ -1,5 +1,5 @@
 %include ../../arch/arm-base.ks
-%include ../../arch/arm-boot-fw-vfat.ks
+%include ../../arch/arm-boot-vfat.ks
 
 
 %post --erroronfail --log /tmp/post-bcm283x.log
@@ -8,6 +8,7 @@
 
 
 %packages
-bcm283x-firmware
+bcm2835-firmware
+bcm2711-firmware
 linux-firmware-brcm
 %end
