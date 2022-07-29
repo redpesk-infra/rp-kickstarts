@@ -4,3 +4,7 @@
 
 # Disabling bootloader for ARM images
 bootloader --location=none --disabled
+
+%packages
+uboot-smack
+%end
