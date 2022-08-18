@@ -7,4 +7,7 @@ selinux-policy-minimum
 
 %post
 echo "SECURITY_MODEL=\"selinux\"" >> /etc/os-release
+
+setfiles -v /etc/selinux/minimum/contexts/files/file_contexts /
+
 %end
