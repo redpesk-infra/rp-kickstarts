@@ -11,4 +11,6 @@
 -uboot-tools
 -zram-generator
 -zram-generator-defaults
+# Kingfisher needs
+linux-firmware-ti-connectivity
 %end
