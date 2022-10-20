@@ -6,8 +6,10 @@ selinux-policy-minimum
 %end
 
 %post
+set -x
 echo "SECURITY_MODEL=\"selinux\"" >> /etc/os-release
 
+load_policy -qi
 setfiles -v /etc/selinux/minimum/contexts/files/file_contexts /
 
 %end
