@@ -4,4 +4,4 @@
 zerombr
 clearpart --all --disklabel=gpt
 
-part /boot  --fstype ext4 --size 500    --asprimary --label=boot
+part /boot  --fstype ext4 --size 200    --asprimary --label=boot
