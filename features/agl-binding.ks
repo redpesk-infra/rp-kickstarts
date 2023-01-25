@@ -1,6 +1,8 @@
 %include ../packages/agl-binding.ks
 
 %post --nochroot --erroronfail --log /mnt/sysroot/tmp/post-agl-binding_install.log
+# Exit script on first error as this step is mandatory for package installation
+set -e
 
 # Use mock dnf config file to be able to access repository
 CONFIG_FILE="/etc/dnf/dnf.conf"
