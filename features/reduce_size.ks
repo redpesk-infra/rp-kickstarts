@@ -1,7 +1,6 @@
 
 %packages
 -alsa-sof-firmware
--cracklib-dicts
 -langpacks-en
 -mozjs78
 -geolite2-country
