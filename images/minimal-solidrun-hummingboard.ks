@@ -1,4 +1,4 @@
-%include core-solidrun.ks
+%include core-solidrun-hummingboard.ks
 %include ../distro/redpesk-minimal.ks
 
 # Called at the end

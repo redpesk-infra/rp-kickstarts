@@ -1,4 +1,4 @@
-%include images/core-solidrun.ks
+%include images/core-solidrun-solidsence.ks
 %include features/smack.ks
 %include features/extract_logs.ks
 

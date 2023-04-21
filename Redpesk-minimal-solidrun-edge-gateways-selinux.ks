@@ -1,4 +1,4 @@
-%include images/minimal-solidrun.ks
+%include images/minimal-solidrun-solidsence.ks
 %include features/selinux.ks
 %include features/extract_logs.ks
 
