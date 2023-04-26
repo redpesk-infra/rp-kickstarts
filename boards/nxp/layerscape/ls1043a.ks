@@ -6,7 +6,7 @@ zerombr
 clearpart --all --disklabel=msdos
 
 # Add an offset on the first part (/boot) to let some space for firmware (Region2)
-part /boot  --fstype ext4 --size 500    --asprimary --label=boot --start=64
+part /boot  --fstype ext4 --size 200    --asprimary --label=boot --start=64
 
 %post --erroronfail --log /tmp/post-ls1043a.log
 # Set your board specific post actions here

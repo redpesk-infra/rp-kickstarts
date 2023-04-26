@@ -1,9 +1,9 @@
 # Note that only 3 primary parts are available (the 4th is used to create the extended parts)
 
 # Setup specific partition scheme of redpesk
-part /config    --fstype ext4 --size 50     --asprimary --label=config   --fsoptions="noatime,rw"
+part /config    --fstype ext4 --size 100     --asprimary --label=config   --fsoptions="noatime,rw"
 part /recovery  --fstype ext4 --size 500    --asprimary --label=recovery --fsoptions="noatime,rw"
-part /      	--fstype ext4 --size 2700               --label=rootfs   --fsoptions="noatime,rw"
+part /      	--fstype ext4 --size 2650               --label=rootfs   --fsoptions="noatime,rw"
 part /data  	--fstype ext4 --size 500                --label=data     --fsoptions="noatime,rw" --grow
 
 %post --nochroot --logfile=/mnt/sysroot/tmp/post-fstab.log --erroronfail
