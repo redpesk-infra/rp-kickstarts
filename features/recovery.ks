@@ -8,6 +8,7 @@ uboot-tools
 %post --erroronfail --log /tmp/post-recovery.log
 if [[ `rpm -E %{_arch}` == "aarch64" ]]; then
 	cp /boot/Image /recovery/recovery.img
+	cp /boot/*.dtb /recovery/
 elif [[ `rpm -E %{_arch}` == "x86_64" ]]; then
 	cp /boot/vmlinuz*x86_64 /recovery/recovery.img
 else
