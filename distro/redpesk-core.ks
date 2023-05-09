@@ -1,21 +1,12 @@
 %include ../features/redpesk-partitioning.ks
+%include ../features/password.ks
+%include ../features/regional.ks
 
 #Live media need
 network --bootproto=dhcp --device=link --activate
 # Use the text interface not the graphical one
 #text
 #version=DEVEL
-# Keyboard layouts
-keyboard --vckeymap=fr --xlayouts='fr'
-# Root password setup
-rootpw --plaintext root
-# System language
-lang en_US.UTF-8
-eula --agreed
-# Timezone setup
-timezone --isUtc Europe/Paris
-# System authorization information
-auth --useshadow --passalgo=sha512
 # Firewall configuration
 firewall --enabled --service=mdns,ssh
 # Be sure host drive will not be touched by anaconda
