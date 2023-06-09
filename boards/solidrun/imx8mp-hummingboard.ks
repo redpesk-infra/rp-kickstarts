@@ -8,4 +8,5 @@ dd if=/mnt/sysroot/boot/flash.bin of=/dev/mapper/Redpesk-OS bs=1024 seek=32
 
 %packages
 uboot
+solidrun-firmware
 %end
