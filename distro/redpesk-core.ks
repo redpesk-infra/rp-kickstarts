@@ -70,7 +70,6 @@ dracut-config-generic   # remove this in %post
 dracut-live
 glibc-langpack-en
 redpesk-repos
-iotbzh-rpm-config
 platform-firstboot
 wget
 dnf

@@ -1,5 +1,5 @@
 %packages
-smack-rules
+sec-smack-rules
 sec-lsm-manager-smack
 -selinux-policy
 -selinux-policy-targeted
