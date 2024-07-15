@@ -1,3 +1,3 @@
 %packages
-redpesk-bsp-repos
+#redpesk-bsp-repos
 %end
