@@ -9,4 +9,5 @@
 uboot
 kernel-modules-extra
 kernel-modules
+phytec-wireless-firmware
 %end
