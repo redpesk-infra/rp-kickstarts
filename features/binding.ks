@@ -26,6 +26,9 @@ if [ -f ${CHROOT_DIR}/tmp/binding-list ]; then
 	rm ${CHROOT_DIR}/tmp/binding-list
 fi
 
+# Since first boot RPMs are not installed in the image, they are not listed in manifest.log
+rpm -qp ${RPMS_DIR}/* >> /tmp/manifest-firstboot.log
+
 #Clean DNF Cache
 dnf_ks clean all
 %end
