@@ -17,4 +17,7 @@
 -tree
 -usbutils
 -vim
+
+-dracut-live
+-wireless-regdb
 %end
