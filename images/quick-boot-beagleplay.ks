@@ -9,7 +9,6 @@
 -can-utils
 -dnf-utils
 -i2c-tools
--iw
 -picocom
 -platform-runtime-tools
 -rng-tools
@@ -19,5 +18,9 @@
 -vim
 
 -dracut-live
+
+
+-iw
 -wireless-regdb
+-NetworkManager-wifi
 %end
