@@ -18,9 +18,13 @@
 -vim
 
 -dracut-live
-
+-dracut-config-generic
+-dracut-redpesk-common
+-dracut-redpesk-recovery
 
 -iw
 -wireless-regdb
 -NetworkManager-wifi
+
+-wget
 %end
