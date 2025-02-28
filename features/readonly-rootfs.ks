@@ -17,7 +17,7 @@ echo "files /etc/machine-id" >> /etc/rwtab
 # Use config partition for stateless partition
 sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/readonly-root
 
-# Fix NetworkManager DNS resolving
+# Need to be fix if no NetworkManager: Fix NetworkManager DNS resolving
 rm -f /etc/resolv.conf
 ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf
 

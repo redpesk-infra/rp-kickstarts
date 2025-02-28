@@ -7,8 +7,10 @@ network --bootproto=dhcp --device=link --activate
 # Use the text interface not the graphical one
 #text
 #version=DEVEL
-# Firewall configuration
+
+## Need to be fix if no Firewall: Firewall configuration
 firewall --enabled --service=mdns,ssh
+
 # Be sure host drive will not be touched by anaconda
 ignoredisk --drives="vd*"
 # Run the Setup Agent on first boot
