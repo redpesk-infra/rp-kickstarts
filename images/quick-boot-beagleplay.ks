@@ -28,3 +28,5 @@
 
 -wget
 %end
+
+bootloader --location=none --disabled
