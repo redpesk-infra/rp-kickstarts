@@ -12,6 +12,7 @@
 smack-userspace-utils
 -i2c-tools
 -audit
+kernel-uname-r
 #--------------level 2
 
 -can-tests
