@@ -31,6 +31,7 @@ smack-userspace-utils
 -dracut-config-generic
 -dracut-redpesk-common
 -dracut-redpesk-recovery
+-kexec-tools
 
 -psmisc
 
@@ -38,9 +39,13 @@ smack-userspace-utils
 -wireless-regdb
 -NetworkManager-wifi
 
--libselinux-utils
+#Needed by systemd, policycoreutils
+#-libselinux-utils
 
 -wget
+
+-tuned
+-iproute
 
 #--------------level 3
 -libafbcli6
