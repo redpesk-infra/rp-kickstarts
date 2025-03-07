@@ -11,6 +11,8 @@
 smack-userspace-utils
 -i2c-tools
 -audit
+kernel-uname-r
+systemd-bootchart
 #--------------level 2
 
 -can-tests
