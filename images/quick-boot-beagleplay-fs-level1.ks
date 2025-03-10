@@ -5,21 +5,6 @@
 # Called at the end
 #%include ../features/factory_backup.ks
 
-%packages
-
-#--------------level 0
-#--------------level 1
-#Missing in cynagora-setup.service
-smack-userspace-utils
--i2c-tools
--audit
-kernel-uname-r
-systemd-bootchart
-#--------------level 2
-#--------------level 3
-#--------------level 4
-#--------------
-
-%end
+%include level1.ks
 
 bootloader --location=none --disabled
