@@ -10,7 +10,8 @@ network --bootproto=dhcp --device=link --activate
 
 
 # Be sure host drive will not be touched by anaconda
-ignoredisk --drives="vd*"
+ignoredisk --drives=sd*|nvme*|vd*|sr*
+#ignoredisk --drives="*"
 # Run the Setup Agent on first boot
 firstboot --disable
 # Do not configure the X Window System
