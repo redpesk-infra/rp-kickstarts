@@ -21,8 +21,6 @@
 -dracut-redpesk-recovery
 -kexec-tools
 
--psmisc
-
 -iw
 -wireless-regdb
 -NetworkManager-wifi
@@ -35,5 +33,4 @@
 -tuned
 
 -lsscsi
-
 %end
