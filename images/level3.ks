@@ -12,4 +12,5 @@
 -libmicrohttpd
 -librp-utils-core0
 -sec-cynagora
+-sec-lsm-manager-smack
 %end
