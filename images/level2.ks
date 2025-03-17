@@ -33,6 +33,7 @@
 -wget
 
 -tuned
--iproute
+
+-lsscsi
 
 %end

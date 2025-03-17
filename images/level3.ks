@@ -6,4 +6,10 @@
 -afb-binder
 -afb-app-manager
 -afb-app-manager-rpm
+-afb-binder
+-helloworld-binding
+-libafb6
+-libmicrohttpd
+-librp-utils-core0
+-sec-cynagora
 %end
