@@ -17,9 +17,6 @@ firstboot --disable
 skipx
 # Shutdown the image when finished
 shutdown
-# System services
-services --enabled="sshd,NetworkManager,chronyd,cpupower"
-services --disabled="kdump"
 
 %addon com_redhat_kdump --disable
 %end
