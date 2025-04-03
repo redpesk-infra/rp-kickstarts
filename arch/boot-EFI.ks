@@ -9,5 +9,6 @@ echo "fix boot/loaders options config"
 source /etc/default/grub
 sed -i "s/^options.*$/& $GRUB_CMDLINE_LINUX/" /boot/loader/entries/*.conf
 echo "regenerate grub config"
-grub2-mkconfig -o $(find /boot/efi/EFI/ -name grub.cfg)
+rm -f /boot/efi/EFI/redpesk/grub.cfg
+grub2-mkconfig -o /boot/efi/EFI/redpesk/grub.cfg
 %end
