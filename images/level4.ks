@@ -2,7 +2,6 @@
 %packages
 -python3-firewall
 -firewalld
--dosfstools
 
 -NetworkManager
 -NetworkManager-tui
