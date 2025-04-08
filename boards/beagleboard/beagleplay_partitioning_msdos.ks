@@ -5,7 +5,7 @@
 zerombr
 clearpart --all --disklabel=msdos
 
-part /boot --fstype vfat --size 200 --asprimary --label=boot --mkfsoptions="-F 32"
+part /boot --fstype vfat --size 512 --asprimary --label=boot --mkfsoptions="-F 32"
 
 %post --nochroot --logfile=/mnt/sysroot/tmp/post-beagleplay-part.log --erroronfail
 

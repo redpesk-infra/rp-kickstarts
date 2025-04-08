@@ -7,5 +7,5 @@
 -NetworkManager
 -NetworkManager-tui
 -NetworkManager-team
-
+kmod
 %end
