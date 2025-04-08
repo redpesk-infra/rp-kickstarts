@@ -4,7 +4,8 @@
 -firewalld
 -dosfstools
 
--go-srpm-macros
 -NetworkManager
+-NetworkManager-tui
+-NetworkManager-team
 
 %end
