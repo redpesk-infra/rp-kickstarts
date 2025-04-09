@@ -1,9 +1,7 @@
 %include level3.ks
 %packages
-
-
--dosfstools
-
+-python3-firewall
+-firewalld
 
 
 %end
