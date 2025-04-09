@@ -18,8 +18,8 @@ echo "files /etc/machine-id" >> /etc/rwtab
 sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/readonly-root
 
 # Fix NetworkManager DNS resolving
-rm -f /etc/resolv.conf
-ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf
+#rm -f /etc/resolv.conf
+#ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf
 
 # Enable fedora service for readonly rootfs by default
 systemctl enable readonly-root

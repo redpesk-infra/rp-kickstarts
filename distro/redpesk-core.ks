@@ -7,8 +7,10 @@ network --bootproto=dhcp --device=link --activate
 # Use the text interface not the graphical one
 #text
 #version=DEVEL
+
 # Firewall configuration
-firewall --enabled --service=mdns,ssh
+#firewall --enabled --service=mdns,ssh
+
 # Be sure host drive will not be touched by anaconda
 ignoredisk --drives="vd*"
 # Run the Setup Agent on first boot
@@ -18,7 +20,8 @@ skipx
 # Shutdown the image when finished
 shutdown
 # System services
-services --enabled="sshd,NetworkManager,chronyd,cpupower"
+#services --enabled="NetworkManager"
+services --enabled="sshd,chronyd,cpupower"
 services --disabled="kdump"
 
 %addon com_redhat_kdump --disable
