@@ -5,4 +5,8 @@
 
 kmod
 
+-NetworkManager
+-NetworkManager-tui
+-NetworkManager-team
+
 %end
