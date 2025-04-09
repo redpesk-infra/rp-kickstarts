@@ -3,5 +3,6 @@
 -python3-firewall
 -firewalld
 
+kmod
 
 %end
