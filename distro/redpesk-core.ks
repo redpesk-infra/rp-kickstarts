@@ -44,6 +44,10 @@ dnf -y remove dracut-config-generic
 rm -f /etc/machine-id
 touch /etc/machine-id
 
+# Fix "/etc/rc.d/rc.local is not marked executable"
+mkdir -p /etc/systemd/system-generators
+touch /etc/systemd/system-generators/systemd-rc-local-generator
+
 # setup systemd to boot to the right runlevel
 echo -n "Setting default runlevel to multiuser text mode"
 rm -f /etc/systemd/system/default.target
