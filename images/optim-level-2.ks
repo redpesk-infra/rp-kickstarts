@@ -4,10 +4,5 @@
 -python3-firewall
 -firewalld
 
--NetworkManager
--NetworkManager-tui
--NetworkManager-team
-
-systemd-networkd
-
 %end
+

@@ -29,14 +29,11 @@ systemd-bootchart
 
 -iw
 -wireless-regdb
--NetworkManager-wifi
 
 #Needed by systemd, policycoreutils
 #-libselinux-utils
 
 -wget
-
 -tuned
-
 -lsscsi
 %end

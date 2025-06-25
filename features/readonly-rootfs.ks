@@ -17,10 +17,6 @@ echo "files /etc/machine-id" >> /etc/rwtab
 # Use config partition for stateless partition
 sed -i 's/STATE_LABEL=stateless-state/STATE_LABEL=config/g' /etc/sysconfig/readonly-root
 
-# Need to be fix if no NetworkManager: Fix NetworkManager DNS resolving
-rm -f /etc/resolv.conf
-ln -sf /run/NetworkManager/resolv.conf /etc/resolv.conf
-
 # Enable fedora service for readonly rootfs by default
 systemctl enable readonly-root
 systemctl enable systemd-firstboot

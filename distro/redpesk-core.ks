@@ -8,8 +8,6 @@ network --bootproto=dhcp --device=link --activate
 #text
 #version=DEVEL
 
-## Need to be fix if no Firewall: Firewall configuration
-firewall --enabled --service=mdns,ssh
 
 # Be sure host drive will not be touched by anaconda
 ignoredisk --drives="vd*"
@@ -64,7 +62,6 @@ echo "BUILD_DATE=\"`date '+%Y-%m-%d %H:%M:%S'`\"" >> /etc/os-release
 
 %packages --exclude-weakdeps
 @core
-NetworkManager-wifi
 chkconfig
 chrony
 dracut-config-generic   # remove this in %post
@@ -96,6 +93,8 @@ sssd-client
 -xkeyboard-config
 -brcmfmac-firmware
 -atheros-firmware
+
+systemd-udev
 
 %end
 
