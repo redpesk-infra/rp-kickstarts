@@ -95,6 +95,7 @@ sssd-client
 -trousers
 -usb_modeswitch
 -xkeyboard-config
+-brcmfmac-firmware
 
 %end
 
