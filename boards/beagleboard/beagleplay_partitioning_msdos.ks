@@ -9,7 +9,7 @@ part /boot --fstype vfat --size 200 --asprimary --label=boot --mkfsoptions="-F 3
 
 %post --nochroot --logfile=/mnt/sysroot/tmp/post-beagleplay-part.log --erroronfail
 
-BLK_ID=$(blkid /dev/mapper/Redpesk-OS* | grep "LABEL=.boot" | awk -F ':' '{print $1}') # /dev/Redpesk-OS...p1
+BLK_ID=$(blkid /dev/mapper/Redpesk-OS* | grep -i "LABEL=.boot" | awk -F ':' '{print $1}') # /dev/Redpesk-OS...p1
 
 echo "BLK_ID ${BLK_ID}"
 echo "Setting Flags \(boot,lba\)"
