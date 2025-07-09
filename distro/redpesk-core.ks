@@ -96,6 +96,7 @@ sssd-client
 -usb_modeswitch
 -xkeyboard-config
 -brcmfmac-firmware
+-atheros-firmware
 
 %end
 
