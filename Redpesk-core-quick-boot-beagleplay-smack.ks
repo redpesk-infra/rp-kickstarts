@@ -8,3 +8,5 @@
 %include ./images/optim-level-3.ks
 
 bootloader --location=none --disabled
+
+firewall --disable
