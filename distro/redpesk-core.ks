@@ -90,7 +90,6 @@ sssd-client
 -lvm2
 -trousers
 -usb_modeswitch
--xkeyboard-config
 -brcmfmac-firmware
 -atheros-firmware
 
