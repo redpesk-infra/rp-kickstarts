@@ -1,0 +1,2 @@
+#file: group/core-selinux
+selinux-policy-targeted

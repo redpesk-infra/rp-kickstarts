@@ -32,7 +32,6 @@ procps-ng
 rng-tools
 rootfiles
 rpm
-selinux-policy-targeted
 setup
 shadow-utils
 sssd-common
