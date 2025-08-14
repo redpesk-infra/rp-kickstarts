@@ -1,0 +1,6 @@
+#file: group/file-server
+cifs-utils
+gssproxy
+nfs-utils
+nfs4-acl-tools
+samba

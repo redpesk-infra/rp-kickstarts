@@ -1,0 +1,13 @@
+#file: category/base-system
+%include ../group/dial-up
+%include ../group/hardware-monitoring
+%include ../group/infiniband
+%include ../group/large-systems
+%include ../group/legacy-unix
+%include ../group/mainframe-access
+%include ../group/network-tools
+%include ../group/performance
+%include ../group/scientific
+%include ../group/security-tools
+%include ../group/smart-card
+%include ../group/standard

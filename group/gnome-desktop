@@ -1,0 +1,6 @@
+#file: group/gnome-desktop
+ModemManager
+NetworkManager-adsl
+avahi
+glib-networking
+polkit

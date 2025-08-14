@@ -1,0 +1,12 @@
+#file: group/network-file-system-client
+autofs
+cifs-utils
+device-mapper-multipath
+fcoe-utils
+glusterfs-fuse
+gssproxy
+iscsi-initiator-utils
+lldpad
+nfs-utils
+nfs4-acl-tools
+samba-client

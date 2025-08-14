@@ -1,0 +1,6 @@
+#file: group/infiniband
+libibverbs
+libibverbs-utils
+librdmacm
+librdmacm-utils
+rdma-core

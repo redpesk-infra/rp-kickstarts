@@ -1,0 +1,5 @@
+#file: group/python-web
+freetype-devel
+libcurl
+libcurl-devel
+python3-magic

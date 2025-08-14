@@ -1,0 +1,4 @@
+#file: category/servers
+%include ../group/file-server
+%include ../group/mail-server
+%include ../group/network-server

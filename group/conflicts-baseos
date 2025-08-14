@@ -1,0 +1,3 @@
+#file: group/conflicts-baseos
+coreutils-single
+libcurl-minimal

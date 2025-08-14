@@ -1,0 +1,4 @@
+#file: category/development
+%include ../group/additional-devel
+%include ../group/development
+%include ../group/platform-devel

@@ -1,0 +1,12 @@
+#file: group/platform-devel
+fontconfig-devel
+freetype-devel
+glib2-devel
+glibc-devel
+krb5-devel
+libpng-devel
+ncurses-devel
+openldap-devel
+openssl-devel
+pam-devel
+zlib-devel

@@ -1,0 +1,9 @@
+#file: group/development
+binutils
+glibc-devel
+make
+pkgconf
+pkgconf-m4
+pkgconf-pkg-config
+rpm-sign
+strace

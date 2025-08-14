@@ -1,0 +1,3 @@
+#file: group/large-systems
+numactl
+numad

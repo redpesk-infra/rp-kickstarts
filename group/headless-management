@@ -1,0 +1,5 @@
+#file: group/headless-management
+cockpit-bridge
+cockpit-system
+cockpit-ws
+openssh-server

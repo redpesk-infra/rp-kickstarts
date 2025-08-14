@@ -1,0 +1,6 @@
+#file: group/server-product
+chrony
+polkit
+realmd
+redpesk-release
+timedatex

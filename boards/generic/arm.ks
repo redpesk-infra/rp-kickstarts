@@ -1,8 +1,8 @@
 
 %packages --exclude-weakdeps
-@core
-@standard
-@hardware-support
+%include ../../group/core
+%include ../../group/standard
+%include ../../group/hardware-support
 
 dracut-redpesk-arm
 # remove this in %post

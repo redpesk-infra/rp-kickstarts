@@ -61,7 +61,7 @@ echo "BUILD_DATE=\"`date '+%Y-%m-%d %H:%M:%S'`\"" >> /etc/os-release
 %end
 
 %packages --exclude-weakdeps
-@core
+%include ../group/core
 chkconfig
 chrony
 dracut-config-generic   # remove this in %post
@@ -76,7 +76,6 @@ dracut-redpesk-common
 #hack: needed by dnf
 libgomp
 sssd-client
--@standard
 -glibc-all-langpacks
 -fedora-repos
 -fedora-repos-modular
