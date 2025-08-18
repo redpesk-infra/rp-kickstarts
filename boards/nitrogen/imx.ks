@@ -6,7 +6,7 @@ dd if=/boot/flash.bin of=/dev/mapper/Redpesk-OS bs=1024 seek=32 conv=fsync
 %end
 
 
-%packages
+%packages --exclude-weakdeps
 uboot
 uboot-bootscripts
 qcacld-kmod

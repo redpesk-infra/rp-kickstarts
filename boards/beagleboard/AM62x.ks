@@ -6,6 +6,6 @@
 %end
 
 
-%packages
+%packages --exclude-weakdeps
 
 %end

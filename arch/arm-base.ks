@@ -1,4 +1,4 @@
-%packages
+%packages --exclude-weakdeps
 -grubby
 -grubby-deprecated
 -extlinux-bootloader

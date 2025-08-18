@@ -1,4 +1,4 @@
-%packages
+%packages --exclude-weakdeps
 sec-lsm-manager-selinux
 selinux-policy
 selinux-policy-minimum

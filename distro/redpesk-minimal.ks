@@ -2,7 +2,7 @@
 %include ../features/project-features.ks
 %include ../packages/project-apps.ks
 
-%packages
+%packages --exclude-weakdeps
 #Application Framework
 afb-binder
 afb-app-manager

@@ -1,4 +1,4 @@
-%packages
+%packages --exclude-weakdeps
 file
 gdb
 htop

@@ -1,4 +1,4 @@
-%packages
+%packages --exclude-weakdeps
 can-tests
 can-utils
 dnf-utils

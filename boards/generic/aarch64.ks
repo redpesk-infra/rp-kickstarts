@@ -1,6 +1,6 @@
 %include arm.ks
 
-%packages
+%packages --exclude-weakdeps
 uboot-images-armv8
 -grubby-deprecated
 %end

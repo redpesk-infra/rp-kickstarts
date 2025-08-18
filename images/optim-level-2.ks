@@ -1,6 +1,6 @@
 %include optim-level-1.ks
 
-%packages
+%packages --exclude-weakdeps
 -python3-firewall
 -firewalld
 

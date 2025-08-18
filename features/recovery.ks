@@ -1,7 +1,7 @@
 #NOTE: This feature needs a specific recovery partition mounted into /recovery
 %include initramfs.ks
 
-%packages
+%packages --exclude-weakdeps
 uboot-tools
 %end
 

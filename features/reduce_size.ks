@@ -1,5 +1,5 @@
 
-%packages
+%packages --exclude-weakdeps
 -alsa-sof-firmware
 -langpacks-en
 -mozjs78

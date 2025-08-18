@@ -5,6 +5,6 @@
 # Disabling bootloader for ARM images
 bootloader --location=none --disabled
 
-%packages
+%packages --exclude-weakdeps
 uboot-selinux
 %end

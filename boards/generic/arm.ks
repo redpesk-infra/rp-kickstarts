@@ -1,5 +1,5 @@
 
-%packages
+%packages --exclude-weakdeps
 @core
 @standard
 @hardware-support

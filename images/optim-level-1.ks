@@ -1,11 +1,11 @@
 
-%packages
+%packages --exclude-weakdeps
 -i2c-tools
 -audit
 systemd-bootchart
 %end
 
-%packages
+%packages --exclude-weakdeps
 
 -can-tests
 -can-utils
