@@ -13,7 +13,6 @@ systemd-bootchart
 -picocom
 -platform-runtime-tools
 -rng-tools
--tar
 -tree
 -usbutils
 -vim
@@ -33,7 +32,6 @@ systemd-bootchart
 #Needed by systemd, policycoreutils
 #-libselinux-utils
 
--wget
 -tuned
 -lsscsi
 %end
