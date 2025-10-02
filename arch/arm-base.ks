@@ -1,5 +1,5 @@
 %packages --exclude-weakdeps
--grubby
+-*grubby
 -grubby-deprecated
 -extlinux-bootloader
 -fedora-arm-installer
