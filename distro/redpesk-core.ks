@@ -60,7 +60,7 @@ echo "ARCH=\"`rpm --eval %{_arch}`\"" >> /etc/os-release
 echo "BUILD_DATE=\"`date '+%Y-%m-%d %H:%M:%S'`\"" >> /etc/os-release
 %end
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 %include ../group/core
 chkconfig
 chrony

@@ -6,6 +6,6 @@
 # Disabling bootloader for ARM images
 bootloader --location=none --disabled
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 uboot-smack
 %end

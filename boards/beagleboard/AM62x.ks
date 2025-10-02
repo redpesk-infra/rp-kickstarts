@@ -6,6 +6,6 @@
 %end
 
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 
 %end

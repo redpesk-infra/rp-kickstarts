@@ -7,7 +7,7 @@ firewall --disable
 bootloader --location=mbr --boot-drive="/dev/mapper/Redpesk-OS" --append=" security=none"
 
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 tar
 
 # specific for seanasim

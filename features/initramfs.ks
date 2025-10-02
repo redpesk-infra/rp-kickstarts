@@ -2,7 +2,7 @@
 #This initramfs will be used for recovery mode and will then but installed into
 #recovery partition mounted in /recovery
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 dracut-redpesk-recovery
 %end
 

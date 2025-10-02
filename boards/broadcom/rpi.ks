@@ -6,7 +6,7 @@
 %end
 
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 -uboot-images-armv7
 -uboot-images-armv8
 uboot

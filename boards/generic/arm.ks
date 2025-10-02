@@ -1,5 +1,5 @@
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 %include ../../group/core
 %include ../../group/hardware-support
 

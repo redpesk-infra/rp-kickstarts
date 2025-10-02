@@ -1,3 +1,3 @@
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 redpesk-bsp-repos
 %end

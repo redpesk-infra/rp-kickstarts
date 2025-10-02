@@ -11,7 +11,7 @@ part /boot  --fstype ext4 --size 200    --asprimary --label=boot --start=10
 %end
 
 
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 # Custom kernel for IMX
 linux-firmware-imx
 -atmel-firmware

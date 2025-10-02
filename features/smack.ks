@@ -1,4 +1,4 @@
-%packages --nocore --exclude-weakdeps
+%packages --ignoremissing --nocore --exclude-weakdeps
 sec-smack-rules
 sec-lsm-manager-smack
 -selinux-policy
