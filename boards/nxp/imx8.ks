@@ -14,7 +14,7 @@ set +x
 %end
 
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 uboot
 linux-firmware-amphion
 %end

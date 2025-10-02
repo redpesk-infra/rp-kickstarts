@@ -6,7 +6,7 @@ dd if=/usr/lib/firmware/fip.s32 of=/dev/mapper/Redpesk-OS conv=notrunc,fsync see
 
 %end
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 arm-trusted-firmware
 pfe-firmware
 uboot

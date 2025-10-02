@@ -1,5 +1,5 @@
 %include optim-level-2.ks
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 -libafbcli6
 -afb-client
 -libafb6

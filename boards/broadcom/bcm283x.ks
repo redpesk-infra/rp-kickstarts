@@ -7,7 +7,7 @@
 %end
 
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 bcm2835-firmware
 bcm2711-firmware
 linux-firmware-brcm

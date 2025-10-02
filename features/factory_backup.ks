@@ -1,6 +1,6 @@
 # NOTE: this features should be called at the end of your kickstart
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 
 %end
 

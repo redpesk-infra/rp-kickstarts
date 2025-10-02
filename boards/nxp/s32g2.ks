@@ -11,6 +11,6 @@ part /boot --fstype vfat --size 200 --asprimary --label=boot --start=10 --mkfsop
 # Set your board specific post actions here
 %end
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 
 %end

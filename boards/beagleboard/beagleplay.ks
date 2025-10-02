@@ -5,7 +5,7 @@
 
 %end
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 uboot
 kernel-modules-extra
 kernel-modules

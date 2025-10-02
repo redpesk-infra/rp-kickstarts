@@ -6,7 +6,7 @@
 %end
 
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 # Custom kernel for CM3
 -linux-firmware-brcm
 -uboot-images-armv7

@@ -22,6 +22,6 @@ systemctl enable readonly-root
 systemctl enable systemd-firstboot
 %end
 
-%packages --exclude-weakdeps
+%packages --nocore --exclude-weakdeps
 readonly-root
 %end
