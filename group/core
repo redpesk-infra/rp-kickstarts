@@ -15,7 +15,6 @@ grubby
 hostname
 initscripts
 iproute
-iprutils
 iputils
 irqbalance
 kbd
