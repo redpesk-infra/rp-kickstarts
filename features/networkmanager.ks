@@ -1,5 +1,5 @@
 
-%packages
+%packages --ignoremissing --nocore --exclude-weakdeps
 NetworkManager-wifi
 
 %end

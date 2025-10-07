@@ -1,4 +1,4 @@
-%packages
+%packages --ignoremissing --nocore --exclude-weakdeps
 systemd-networkd
 systemd-resolved
 
