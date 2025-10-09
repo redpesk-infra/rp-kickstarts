@@ -4,6 +4,15 @@ NetworkManager-wifi
 
 %end
 
+%pre-install
+# disable systemd-networkd
+mkdir -p /mnt/sysimage/etc/systemd/system-preset
+cat <<EOF > /mnt/sysimage/etc/systemd/system-preset/10-disable-networkd.preset
+disable systemd-networkd.service
+disable systemd-networkd-wait-online.service
+EOF
+%end
+
 %post
 ## Firewall configuration
 firewall --enabled --service=mdns,ssh
