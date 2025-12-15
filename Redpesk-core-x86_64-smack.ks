@@ -4,4 +4,4 @@
 %include features/networkmanager.ks
 
 # System bootloader configuration
-bootloader --location=mbr --boot-drive="/dev/mapper/Redpesk-OS" --append="security=smack console=ttyS0,115200"
+bootloader --location=mbr --boot-drive="/dev/mapper/Redpesk-OS" --append="security=smack console=ttyS1,115200"
