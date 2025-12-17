@@ -4,4 +4,4 @@
 %include features/networkmanager.ks
 
 # System bootloader configuration
-bootloader --location=mbr --timeout=1 --boot-drive="/dev/mapper/Redpesk-OS" --append="security=selinux console=ttyS1,115200"
+bootloader --location=mbr --timeout=1 --boot-drive="/dev/mapper/Redpesk-OS" --append="security=selinux"
