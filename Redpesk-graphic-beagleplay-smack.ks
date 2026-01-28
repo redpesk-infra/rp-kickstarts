@@ -2,13 +2,13 @@
 %include features/smack.ks
 %include features/extract_logs.ks
 
-%packages
+%packages  --ignoremissing --nocore --exclude-weakdeps
 cage-gtk-demo
 %end
 
 # Disabling bootloader for ARM images
 bootloader --location=none --disabled
 
-%post 
+%post
 systemctl set-default graphical.target
 %end
