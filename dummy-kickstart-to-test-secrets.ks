@@ -31,6 +31,7 @@ part /boot/efi --asprimary --fstype="FAT32" --size=200 --label=EFI
 part / --fstype="ext4" --size=800 --fsoptions="noatime,rw" --label=rootfs
 
 %packages --nocore --exclude-weakdeps
+rpm
 ${{secrets.package}}
 %end
 
